@@ -4,6 +4,6 @@
 require_once __DIR__ . '/../config/twig.php';
 
 
-$name = 'Wilder';
+$products = ["guitare", "banjo", "piano", "drums"];
 
-echo $twig->render('home.html.twig', ['name' => $name]);
+echo $twig->render('home.html.twig', ["products" => $products]);
